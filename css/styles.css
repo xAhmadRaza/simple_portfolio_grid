@@ -1,0 +1,796 @@
+/*
+===================================
+|| Fonts                          |
+===================================
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+/*
+===================================
+|| VARIABLES                      |
+===================================
+*/
+
+:root {
+  /* dark shades of primary color*/
+  --CLR-PRIMARY-1: hsl(43, 86%, 17%);
+  --CLR-PRIMARY-2: hsl(43, 77%, 27%);
+  --CLR-PRIMARY-3: hsl(43, 72%, 37%);
+  --CLR-PRIMARY-4: hsl(42, 63%, 48%);
+  /* primary/main color */
+  --CLR-PRIMARY-5: hsl(42, 78%, 60%);
+  /* lighter shades of primary color */
+  --CLR-PRIMARY-6: hsl(43, 89%, 70%);
+  --CLR-PRIMARY-7: hsl(43, 90%, 76%);
+  --CLR-PRIMARY-8: hsl(45, 86%, 81%);
+  --CLR-PRIMARY-9: hsl(45, 90%, 88%);
+  --CLR-PRIMARY-10: hsl(45, 100%, 96%);
+  /* darkest grey - used for headings */
+  --CLR-GREY-1: hsl(209, 61%, 16%);
+  --CLR-GREY-2: hsl(211, 39%, 23%);
+  --CLR-GREY-3: hsl(209, 34%, 30%);
+  --CLR-GREY-4: hsl(209, 28%, 39%);
+  /* grey used for paragraphs */
+  --CLR-GREY-5: hsl(210, 22%, 49%);
+  --CLR-GREY-6: hsl(209, 23%, 60%);
+  --CLR-GREY-7: hsl(211, 27%, 70%);
+  --CLR-GREY-8: hsl(210, 31%, 80%);
+  --CLR-GREY-9: hsl(212, 33%, 89%);
+  --CLR-GREY-10: hsl(210, 36%, 96%);
+  --CLR-WHITE: #fff;
+  --FF-PRIMARY: "Roboto", sans-serif;
+  --FF-SECONDARY: "Open Sans", sans-serif;
+  --TRANSITION: all 0.3s linear;
+  --LETTER-SPACING: 0.25rem;
+  --RADIUS: 0.5rem;
+  --LIGHT-SHADOW: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --DART-SHADOW: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --MAX-WIDTH: 1170px;
+}
+/*
+===================================
+|| BASIC RESET                     |
+===================================
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--FF-SECONDARY);
+  background: var(--CLR-WHITE);
+  color: var(--CLR-GREY-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+img:not(header img) {
+  width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: var(--ff-primary);
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+  color: var(--CLR-GREY-5);
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+/*
+===================================
+|| ANIMATIONS                     |
+===================================
+*/
+@keyframes tilt-shaking {
+  0%,
+  5%,
+  10% {
+    transform: rotate(0deg) scale(1);
+  }
+  2.5% {
+    transform: rotate(5deg) scale(1);
+  }
+  7.5% {
+    transform: rotate(-5deg) scale(1);
+  }
+}
+/*
+===================================
+|| UTILITIES                      |
+===================================
+*/
+/* mains section top padding cuz we have fixed header  */
+main {
+  padding-block-start: 5rem;
+}
+/* each section title */
+.title {
+  position: relative;
+  margin-block-end: 1.1rem;
+  letter-spacing: var(--LETTER-SPACING);
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  width: 5rem;
+  height: 4px;
+  background-image: linear-gradient(
+    145deg,
+    var(--CLR-PRIMARY-5),
+    var(--CLR-PRIMARY-7)
+  );
+  /* top: -0.8rem; */
+  left: 50%;
+  transform: translateX(-50%);
+
+  /* margin-block-end: 2rem; */
+}
+/* icons container */
+.socials__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(1rem, 3.5rem));
+  gap: clamp(0.3rem, 2.5vw, 0.5rem);
+  place-items: center;
+  max-width: 20rem;
+}
+@media screen and (min-width: 25em) {
+  .socials__container {
+    /* grid-template-columns: repeat(5, 1fr); */
+  }
+}
+/* section */
+.section {
+  padding-block: 5rem;
+}
+
+.container {
+  /* width: 90vw; */
+  margin: 0 auto;
+  /* max-width: 1170px; */
+  max-width: min(90%, var(--MAX-WIDTH));
+}
+@media screen and (min-width: 992px) {
+  .section-center {
+    max-width: min(95%, max-width);
+  }
+}
+
+.btn {
+  text-transform: uppercase;
+  transform: rotate(0deg);
+  color: var(--clr-primary-1);
+  letter-spacing: var(--LETTER-SPACING);
+  letter-spacing: 0.125em;
+  padding: 0.4rem 0.8rem;
+  display: inline-block;
+  background-image: linear-gradient(
+    145deg,
+    transparent 50%,
+    var(--CLR-PRIMARY-5) 50%
+  );
+  background-size: 330%;
+  font-weight: 700;
+  -webkit-transition: var(--TRANSITION);
+  transition: var(--TRANSITION);
+  transition-duration: 0.2s;
+  font-size: 0.875rem;
+  /* border: 2px solid transparent; */
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: var(--RADIUS);
+}
+.btn:hover {
+  background-position: right;
+  color: var(--CLR-PRIMARY-1);
+
+  animation: tilt-shaking 2s infinite;
+  animation-fill-mode: both;
+  animation-delay: 1s;
+}
+/* cta btn */
+.cta__btn,
+.cta__btn:any-link {
+  /* background-color: ; */
+  background-image: linear-gradient(
+    145deg,
+    var(--CLR-PRIMARY-9) 50%,
+    var(--CLR-PRIMARY-5) 50%
+  );
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.26);
+  margin-block-end: 3rem;
+}
+/* cta btn hover */
+.cta__btn:is(:hover, :active, :focus) {
+  box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.26);
+}
+
+/*  user img container this is just duo to the border
+that is shown behind the user img */
+.user__img__container {
+  position: relative;
+}
+@media screen and (min-width: 48em) {
+  .user__img__container::after {
+    position: absolute;
+    content: "";
+    right: -2rem;
+    bottom: -2rem;
+    border: 0.25rem solid var(--CLR-PRIMARY-10);
+    border-radius: var(--RADIUS);
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+
+    box-shadow: 0.25rem 0.25rem 5px rgba(0, 0, 0, 0.37);
+    /* top: 0;   */
+  }
+}
+
+/* user image */
+
+.user__img {
+  max-width: 19rem;
+  border-radius: var(--RADIUS);
+  position: relative;
+  z-index: 5;
+  box-shadow: 0.5rem 0.5rem 5px rgba(0, 0, 0, 0.371);
+}
+
+/*
+===================================
+|| NAVBAR                         |
+===================================
+*/
+/* main site nav */
+.nav {
+  position: fixed;
+  z-index: 99999;
+  background-color: var(--CLR-PRIMARY-9);
+  box-shadow: 0 2px 4px hsla(42, 78%, 60%, 0.474);
+  width: 100%;
+  height: 5rem;
+  left: 0;
+  /* top: 0; */
+}
+/* nav container */
+.nav__container {
+  display: grid;
+  height: 100%;
+  /* grid-template-columns: auto 1fr; */
+  grid-template-columns: min-content min-content;
+  justify-content: space-between;
+  align-items: center;
+  max-width: min(95%, var(--MAX-WIDTH));
+}
+/* main nav logo */
+.nav__logo {
+  display: grid;
+  align-items: center;
+  position: relative;
+  z-index: 9999;
+}
+/* nav menu container */
+.nav__menu__container {
+  position: fixed;
+  left: 100%;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  z-index: 9998;
+  transition: var(--TRANSITION);
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+/* mobile open nav menu container */
+.nav__open .nav__menu__container {
+  left: 0;
+}
+/* big screen nav menu container */
+@media screen and (min-width: 48em) {
+  .nav__menu__container {
+    position: static;
+    height: auto;
+    /* place-content: normal; */
+  }
+}
+/* nav menu */
+.nav__menu {
+  display: grid;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+/* big screen nav menu */
+@media screen and (min-width: 48em) {
+  .nav__menu {
+    grid-template-columns: repeat(4, max-content);
+    /* justify-self: end; */
+  }
+}
+/* nav link items */
+.nav__link,
+.nav__link:any-link {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: var(--LETTER-SPACING);
+  color: var(--CLR-PRIMARY-3);
+  padding: 0.5rem 1rem;
+  background-image: linear-gradient(
+    145deg,
+    transparent 50%,
+    var(--CLR-PRIMARY-5) 50%
+  );
+  background-size: 300%;
+
+  transition: var(--TRANSITION);
+  transition-duration: 0.2s;
+}
+/* nav link items hover state */
+.nav__link:is(:hover, :active, :focus) {
+  background-position: right;
+  color: var(--CLR-WHITE);
+}
+@media screen and (min-width: 48em) {
+  /*  big screen nav link items */
+  .nav__link,
+  .nav__link:any-link {
+    font-size: 1rem;
+    background-image: none;
+    height: 100%;
+  }
+  /*  big screen nav link items hover  */
+  .nav__link:is(:hover, :active, :focus) {
+    color: var(--clr-primary-1);
+  }
+}
+
+/* nav social container */
+.nav__social__container {
+  margin-block-start: 3rem;
+}
+/* nav social link items */
+.social-icon,
+.social-icon:any-link {
+  font-size: 1.5rem;
+  transition: var(--TRANSITION);
+  color: var(--CLR-PRIMARY-1);
+  display: inline-block;
+}
+/* nav social link items hover */
+
+.social-icon:is(:focus, :hover, :active) {
+  color: var(--CLR-PRIMARY-3);
+  transform: scale(1.2);
+}
+
+@media screen and (min-width: 48em) {
+  /* big screen nav social link items */
+  .nav__social__container {
+    display: none;
+  }
+}
+/* mobile menu btn */
+.navigation__btn {
+  border: none;
+  background-color: transparent;
+  position: relative;
+}
+@media screen and (min-width: 48em) {
+  /* big screen mobile menu btn */
+  .navigation__btn {
+    display: none;
+  }
+}
+
+/* mobile menu icon container */
+.navigation__icon {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 9999;
+  cursor: pointer;
+}
+/* mobile menu icon */
+.navigation__icon > div,
+.navigation__icon::after,
+.navigation__icon::before {
+  width: 80%;
+  height: 4px;
+  background-color: #000;
+  transition: all 0.3s;
+}
+.navigation__icon::after,
+.navigation__icon::before {
+  content: "";
+  position: absolute;
+}
+.navigation__icon::before {
+  top: 25%;
+}
+.navigation__icon::after {
+  bottom: 25%;
+}
+
+/* mobile nav icon hover state when mobile nav is not open */
+.header :not(.nav__open .navigation__icon):hover::before {
+  top: 22%;
+}
+.header :not(.nav__open .navigation__icon):hover::after {
+  bottom: 22%;
+}
+
+.nav__open .navigation__btn {
+  /* right: -2rem;
+  top: 2rem; */
+}
+
+/* mobile nav open mobile nav icon */
+.nav__open .navigation__icon > div {
+  /* width: 10px; */
+  /* height: 10px; */
+  width: 0;
+  height: 0;
+  /* border-radius: 50%; */
+}
+.nav__open .navigation__icon > div,
+.nav__open .navigation__icon::after,
+.nav__open .navigation__icon::before {
+  background-color: red;
+}
+.nav__open .navigation__icon::before {
+  top: 50%;
+  transform: translateY(-50%) rotate(135deg);
+}
+.nav__open .navigation__icon::after {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-135deg);
+}
+/* mobile nav open mobile menu hover state */
+.nav__open .navigation__btn:hover .navigation__icon > div,
+.nav__open .navigation__btn:hover .navigation__icon::after,
+.nav__open .navigation__btn:hover .navigation__icon::before,
+.nav__open .navigation__btn:focus .navigation__icon > div,
+.nav__open .navigation__btn:focus .navigation__icon::after,
+.nav__open .navigation__btn:focus .navigation__icon::before,
+.nav__open .navigation__btn:active .navigation__icon > div,
+.nav__open .navigation__btn:active .navigation__icon::after,
+.nav__open .navigation__btn:active .navigation__icon::before {
+  background-color: var(--CLR-PRIMARY-3);
+}
+/* mobile nav background color */
+.mobile__nav__bg__overlay {
+  background-color: var(--CLR-PRIMARY-10);
+  position: fixed;
+  z-index: 9997;
+  right: 5%;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  transition: var(--TRANSITION);
+}
+/* mobile nav open mobile nav background color  */
+.nav__open .mobile__nav__bg__overlay {
+  scale: 80;
+}
+
+/*
+===================================
+|| HERO                           |
+===================================
+*/
+/* hero section */
+.hero {
+  background-image: repeating-linear-gradient(
+    135deg,
+    var(--CLR-PRIMARY-5) 5px,
+    var(--CLR-PRIMARY-8) 8px
+  );
+}
+/* 
+firefox hero section 
+this is just duo to the fact
+firefox was not rendering the 
+repeating linear gradient as 
+expected so i have to tweak some 
+value
+*/
+@-moz-document url-prefix() {
+  .hero {
+    background-image: -moz-repeating-linear-gradient(
+      36deg,
+      var(--CLR-PRIMARY-5) 7px,
+      var(--CLR-PRIMARY-8) 11px
+    );
+  }
+}
+/* hero section container */
+.hero__container {
+  display: grid;
+  place-items: center;
+
+  min-height: calc(100vh - 5rem);
+  min-height: calc(100dvh - 5rem);
+
+  /* grid-template-columns: repeat(2, 1fr); */
+}
+
+@media screen and (min-width: 48em) {
+  /* large screen hero section container */
+  .hero__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* underline added to globals */
+
+.hero__title {
+}
+
+/* hero title underline  */
+.hero .title::after {
+  top: -1.2rem;
+  left: 0;
+  transform: translateX(0%);
+  background-image: linear-gradient(
+    14deg,
+    var(--CLR-PRIMARY-3),
+    var(--CLR-PRIMARY-5)
+  );
+}
+/* hero intro text */
+.hero__intro__text {
+  font-size: clamp(0.875rem, 2.5vw, 1rem);
+  letter-spacing: var(--LETTER-SPACING);
+  font-weight: 700;
+  color: var(--CLR-GREY-5);
+  margin-block-end: 0.75rem;
+}
+
+/* hero social icon container */
+.hero__social__container {
+  place-items: normal;
+}
+
+/* hero img container */
+.hero__img__container {
+  display: none;
+}
+@media screen and (min-width: 48em) {
+  /* large screen hero img container */
+  .hero__img__container,
+  .user__img__container {
+    display: inline-block;
+  }
+}
+/*
+===================================
+|| ABOUT                          |
+===================================
+*/
+
+.about__container {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  gap: 4rem 2rem;
+  /* grid-template-columns: min-content; */
+}
+@media screen and (min-width: 48em) {
+  .about__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.about__user__img__container::after {
+  right: auto;
+  left: -2rem;
+  border-color: var(--CLR-PRIMARY-5);
+  /* box-shadow: -0.25rem 0.25rem 5px rgba(0, 0, 0, 0.37); */
+}
+.about__img {
+  /* box-shadow: -0.5rem 0.5rem 5px rgba(0, 0, 0, 0.371); */
+}
+.about__title {
+  margin-block-end: 3rem;
+}
+.about__title::after {
+  top: auto;
+  bottom: -1.2rem;
+  left: 0;
+  transform: translateX(0);
+}
+
+/* section title added to globals */
+
+/*
+===================================
+|| SERVICES                       |
+===================================
+*/
+.services {
+  background-color: var(--CLR-GREY-10);
+  background-image: repeating-linear-gradient(
+    135deg,
+    var(--CLR-GREY-9) 5px,
+    var(--CLR-GREY-10) 8px
+  );
+}
+
+/* 
+firefox hero section 
+this is just duo to the fact
+firefox was not rendering the 
+repeating linear gradient as 
+expected so i have to tweak some 
+value
+*/
+@-moz-document url-prefix() {
+  .services {
+    background-image: -moz-repeating-linear-gradient(
+      36deg,
+      var(--CLR-GREY-9) 7px,
+      var(--CLR-GREY-10) 11px
+    );
+  }
+}
+.services__title {
+  text-align: center;
+  margin-block-end: 4rem;
+}
+.services__title::after {
+  bottom: -1.2rem;
+}
+
+.services__list {
+  gap: 2rem;
+  display: grid;
+}
+@media screen and (min-width: 42em) {
+  .services__list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 62em) {
+  .services__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.services__item {
+  background-color: var(--CLR-PRIMARY-10);
+  padding: 3rem 1.5rem;
+  text-align: center;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  border-radius: var(--RADIUS);
+  box-shadow: var(--LIGHT-SHADOW);
+  transition: var(--TRANSITION);
+}
+.services__item:hover {
+  color: white;
+  background-color: var(--CLR-PRIMARY-5);
+}
+.service__title::after,
+.service__text {
+  transition: var(--TRANSITION);
+}
+.services__item:hover .service__title::after {
+  background-image: none;
+  background-color: white;
+}
+.services__item:hover .service__text {
+  color: white;
+}
+.service-icon {
+  font-size: 2rem;
+  margin-block-end: 1.5rem;
+}
+.service__title {
+  margin-block-end: 2rem;
+}
+.service__title::after {
+  bottom: -1rem;
+  height: 2px;
+  width: 3rem;
+}
+
+/*
+===================================
+|| PROJECTS                       |
+===================================
+*/
+
+/*
+===================================
+|| CONNECT                        |
+===================================
+*/
+
+/*
+===================================
+||  SKILLS                        |
+===================================
+*/
+/*
+===================================
+|| TIMELINE                       |
+===================================
+*/
+
+/*
+===================================
+|| BLOG                           |
+===================================
+*/
+
+/*
+===================================
+|| FOOTER                    |
+===================================
+*/
+/*
+===================================
+|| SINGLE PAGE                    |
+===================================
+*/
+
+/*
+===================================
+|| PRODUCT PAGE                   |
+===================================
+*/
