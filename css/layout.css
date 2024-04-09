@@ -1,15 +1,4 @@
-.footer {
-  padding-block: 2rem;
-  background-color: var(--CLR-GREY-1);
-  color: white;
-  text-align: center;
-}
-.footer .container {
-  width: 100%;
-  place-content: center;
-  gap: 1.5rem;
-  display: grid;
-} /*
+/*
 ===================================
 || Fonts                          |
 ===================================
@@ -547,6 +536,18 @@ that is shown behind the user img */
 || FOOTER                    |
 ===================================
 */
+.footer {
+  padding-block: 2rem;
+  background-color: var(--CLR-GREY-1);
+  color: white;
+  text-align: center;
+}
+.footer .container {
+  width: 100%;
+  place-content: center;
+  gap: 1.5rem;
+  display: grid;
+} 
 .footer .socials__container {
   max-width: 30rem;
   grid-template-columns: repeat(auto-fit, minmax(1rem, 4rem));
