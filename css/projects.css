@@ -1,0 +1,107 @@
+/*
+===================================
+|| PROJECTS                        |
+===================================
+*/
+/* start of contact section */
+.projects {
+  min-height: calc(100vh - 5rem - 9.55rem);
+  background-image: repeating-linear-gradient(
+    135deg,
+    var(--CLR-GREY-9) 5px,
+    var(--CLR-GREY-10) 8px
+  );
+}
+/*  firefox hero section 
+this is just duo to the fact
+firefox was not rendering the 
+repeating linear gradient as 
+expected so i have to tweak some 
+value
+*/
+@-moz-document url-prefix() {
+  .project {
+    background-image: -moz-repeating-linear-gradient(
+      36deg,
+      var(--CLR-GREY-9) 7px,
+      var(--CLR-GREY-10) 11px
+    );
+  }
+}
+/* projects title */
+.projects__title {
+  text-align: center;
+  margin-block-end: 6rem;
+}
+/* projects title underline */
+.projects__title::after {
+  bottom: -1.5rem;
+}
+/* project list */
+.project__list {
+  margin-block-end: 1.5rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+}
+/* single project item */
+.project__item {
+  background-color: var(--CLR-GREY-10);
+  border-radius: 11px;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.204);
+  overflow: hidden;
+}
+/*project item img container */
+
+.project__img__container {
+  position: relative;
+  margin-block-end: 2rem;
+}
+/* project item img */
+.project__img {
+  max-height: 15rem;
+  width: 100%;
+  object-fit: cover;
+}
+/* project item img icon */
+.project__icon {
+  display: grid;
+  place-content: center;
+  width: 4rem;
+  height: 4rem;
+  /* padding: 0.5rem; */
+  border-radius: 50%;
+  font-size: 1.75rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid var(--CLR-GREY-10);
+  background-color: var(--CLR-PRIMARY-4);
+}
+/* project text content padding */
+.project__title,
+.project__text,
+.project__footer {
+  padding-inline: 1.5rem;
+}
+/* project text */
+.project__text {
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+/* project footer */
+.project__footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  padding-block-end: 1.5rem;
+  color: var(--CLR-PRIMARY-4);
+}
+/* project footer link */
+.project__footer a,
+.project__footer a:any-link {
+  color: var(--CLR-PRIMARY-4);
+  justify-self: end;
+  font-size: 0.875rem;
+}

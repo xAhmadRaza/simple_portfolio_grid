@@ -13,6 +13,7 @@
       referrerpolicy="no-referrer"
     />
     <!-- css -->
+    <link rel="stylesheet" href="./css/layout.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -37,28 +38,28 @@
               <!-- start of nav link item -->
               <li class="nav__link__item">
                 <!-- start of nav link  -->
-                <a href="./index.html" class="nav__link">Home</a>
+                <a href="../index.html" class="nav__link">Home</a>
                 <!-- end of nav link  -->
               </li>
               <!-- end of nav link item  -->
               <!-- start of nav link item -->
               <li class="nav__link__item">
                 <!-- start of nav link  -->
-                <a href="./about.html" class="nav__link"> About </a>
+                <a href="./pages/about.html" class="nav__link"> About </a>
                 <!-- end of nav link  -->
               </li>
               <!-- end of nav link item  -->
               <!-- start of nav link item -->
               <li class="nav__link__item">
                 <!-- start of nav link  -->
-                <a href="./projects.html" class="nav__link">Project</a>
+                <a href="./pages/projects.html" class="nav__link">Project</a>
                 <!-- end of nav link  -->
               </li>
               <!-- end of nav link item  -->
               <!-- start of nav link item -->
               <li class="nav__link__item">
                 <!-- start of nav link  -->
-                <a href="./contact.html" class="nav__link">Contact</a>
+                <a href="./pages/contact.html" class="nav__link">Contact</a>
                 <!-- end of nav link  -->
               </li>
               <!-- end of nav link item  -->
@@ -164,7 +165,7 @@
             <!-- start of hero footer -->
             <footer class="hero__footer">
               <!-- start hero cta button -->
-              <a href="./contact.index" class="btn cta__btn">hire me</a>
+              <a href="./pages/contact.html" class="btn cta__btn">hire me</a>
               <!-- end hero cta button -->
 
               <!-- start of hero social  menu -->
@@ -281,69 +282,120 @@
       <!-- end of about -->
       <!-- services -->
       <section class="services section">
+        <!-- start of services container -->
         <div class="services__container container">
+          <!-- start of services header -->
           <header class="services__header">
+            <!-- start of services title -->
             <h2 class="services__title title">Services</h2>
+            <!-- end of services title -->
           </header>
+          <!-- end of services header -->
+          <!-- start of services content -->
           <div class="services__main__body">
+            <!-- start of services list -->
             <ul class="services__list">
-              <li class="services__item__container">
-                <article class="services__item">
+              <!-- start of services item container-->
+              <li class="service__item__container">
+                <!-- start of services item -->
+                <article class="service__item">
+                  <!-- start of services item header -->
                   <header class="service__item__header">
+                    <!-- start of services item icon -->
                     <div class="service__icon__container">
                       <i class="fas fa-code service-icon"></i>
                     </div>
+                    <!-- end of services item icon -->
+                    <!-- start of services item title -->
                     <h4 class="service__title title">Web Development</h4>
+                    <!-- end of services item title -->
                   </header>
+                  <!-- end of services item header -->
+                  <!-- start of services item text -->
                   <p class="service__text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Voluptates corrupti animi saepe quasi excepturi cupiditate
                     voluptate dolor sed obcaecati vero.
                   </p>
+                  <!-- end of services item text -->
                 </article>
+                <!-- end of services item -->
               </li>
-
-              <li class="services__item__container">
-                <article class="services__item">
+              <!-- end of services item container-->
+              <!-- start of services item container-->
+              <li class="service__item__container">
+                <!-- start of services item -->
+                <article class="service__item">
+                  <!-- start of services item header -->
                   <header class="service__item__header">
+                    <!-- start of services item icon -->
                     <div class="service__icon__container">
                       <i class="fab fa-sketch service-icon"></i>
                     </div>
+                    <!-- end of services item icon -->
+                    <!-- start of services item title -->
                     <h4 class="service__title title">Web Design</h4>
+                    <!-- end of services item title -->
                   </header>
+                  <!-- end of services item header -->
+                  <!-- start of services item text -->
                   <p class="service__text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Voluptates corrupti animi saepe quasi excepturi cupiditate
                     voluptate dolor sed obcaecati vero.
                   </p>
+                  <!-- end of services item text -->
                 </article>
+                <!-- end of services item -->
               </li>
-              <li class="services__item__container">
-                <article class="services__item">
+              <!-- end of services item container-->
+              <!-- start of services item container-->
+              <li class="service__item__container">
+                <!-- start of services item -->
+                <article class="service__item">
+                  <!-- start of services item header -->
                   <header class="service__item__header">
+                    <!-- start of services item icon -->
                     <div class="service__icon__container">
                       <i class="fab fa-android service-icon"></i>
                     </div>
+                    <!-- end of services item icon -->
+                    <!-- start of services item title -->
                     <h4 class="service__title title">App Design</h4>
+                    <!-- end of services item title -->
                   </header>
+                  <!-- end of services item header -->
+                  <!-- start of services item text -->
                   <p class="service__text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Voluptates corrupti animi saepe quasi excepturi cupiditate
                     voluptate dolor sed obcaecati vero.
                   </p>
+                  <!-- end of services item text -->
                 </article>
+                <!-- end of services item -->
               </li>
+              <!-- end of services item container-->
             </ul>
+            <!-- end of services list -->
           </div>
+          <!-- end of services content -->
         </div>
+        <!-- end of services container -->
       </section>
       <!-- end of services -->
       <!-- projects -->
-      <!-- <section class="projects section">
+      <section class="projects section">
+        <!-- start of projects container -->
         <div class="projects__container container">
+          <!-- start of projects header -->
           <header class="projects__header">
+            <!-- start of projects title -->
             <h2 class="projects__title title">Latest Works</h2>
+            <!-- end of projects title -->
           </header>
+          <!-- end of projects header -->
+          <!-- start of projects text -->
           <p class="projects__text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
             repudiandae cupiditate ea facilis incidunt, non sapiente! Debitis
@@ -352,45 +404,963 @@
             delectus voluptate animi nulla! Autem explicabo perspiciatis officia
             ea.
           </p>
-
+          <!-- end of projects text -->
+          <!--  start of projects list  -->
           <ul class="project__list">
+            <!-- start of project item container -->
             <li class="project__item__container">
+              <!-- start of project item link-->
               <a href="#">
+                <!-- start of project  -->
                 <article class="project__item">
-                  <figure class="project__item__img">
+                  <!-- start of project item image container -->
+                  <figure class="project__img__container">
+                    <!-- start of project item image -->
                     <img
                       src="./images/project-1.jpeg"
                       class="project__img"
                       alt="project 1"
                     />
+                    <!-- end of project item image -->
                   </figure>
+                  <!-- end of project item  image container -->
+                  <!-- start of project header -->
                   <header class="project__header">
+                    <!-- start of project title -->
                     <h4 class="project__title">project title</h4>
+                    <!-- end of project title -->
+                    <!-- start of project intro -->
                     <p class="project__intro__text">client name</p>
+                    <!-- end of project intro -->
                   </header>
+                  <!--  end of project header -->
                 </article>
+                <!-- end of project item -->
               </a>
+              <!-- end of project item link-->
             </li>
+            <!-- end of project item container-->
+            <!-- start of project item container -->
+            <li class="project__item__container">
+              <!-- start of project item link-->
+              <a href="#">
+                <!-- start of project  -->
+                <article class="project__item">
+                  <!-- start of project item image container -->
+                  <figure class="project__img__container">
+                    <!-- start of project item image -->
+                    <img
+                      src="./images/project-2.jpeg"
+                      class="project__img"
+                      alt="project 1"
+                    />
+                    <!-- end of project item image -->
+                  </figure>
+                  <!-- end of project item  image container -->
+                  <!-- start of project header -->
+                  <header class="project__header">
+                    <!-- start of project title -->
+                    <h4 class="project__title">project title</h4>
+                    <!-- end of project title -->
+                    <!-- start of project intro -->
+                    <p class="project__intro__text">client name</p>
+                    <!-- end of project intro -->
+                  </header>
+                  <!--  end of project header -->
+                </article>
+                <!-- end of project item -->
+              </a>
+              <!-- end of project item link-->
+            </li>
+            <!-- end of project item container-->
+            <!-- start of project item container -->
+            <li class="project__item__container">
+              <!-- start of project item link-->
+              <a href="#">
+                <!-- start of project  -->
+                <article class="project__item">
+                  <!-- start of project item image container -->
+                  <figure class="project__img__container">
+                    <!-- start of project item image -->
+                    <img
+                      src="./images/project-3.jpeg"
+                      class="project__img"
+                      alt="project 1"
+                    />
+                    <!-- end of project item image -->
+                  </figure>
+                  <!-- end of project item  image container -->
+                  <!-- start of project header -->
+                  <header class="project__header">
+                    <!-- start of project title -->
+                    <h4 class="project__title">project title</h4>
+                    <!-- end of project title -->
+                    <!-- start of project intro -->
+                    <p class="project__intro__text">client name</p>
+                    <!-- end of project intro -->
+                  </header>
+                  <!--  end of project header -->
+                </article>
+                <!-- end of project item -->
+              </a>
+              <!-- end of project item link-->
+            </li>
+            <!-- end of project item container-->
+            <!-- start of project item container -->
+            <li class="project__item__container">
+              <!-- start of project item link-->
+              <a href="#">
+                <!-- start of project  -->
+                <article class="project__item">
+                  <!-- start of project item image container -->
+                  <figure class="project__img__container">
+                    <!-- start of project item image -->
+                    <img
+                      src="./images/project-4.jpeg"
+                      class="project__img"
+                      alt="project 1"
+                    />
+                    <!-- end of project item image -->
+                  </figure>
+                  <!-- end of project item  image container -->
+                  <!-- start of project header -->
+                  <header class="project__header">
+                    <!-- start of project title -->
+                    <h4 class="project__title">project title</h4>
+                    <!-- end of project title -->
+                    <!-- start of project intro -->
+                    <p class="project__intro__text">client name</p>
+                    <!-- end of project intro -->
+                  </header>
+                  <!--  end of project header -->
+                </article>
+                <!-- end of project item -->
+              </a>
+              <!-- end of project item link-->
+            </li>
+            <!-- end of project item container-->
           </ul>
+          <!-- end of projects list -->
         </div>
-      </section> -->
+        <!-- end of projects container -->
+      </section>
       <!-- end of projects -->
       <!-- connect -->
-
+      <section class="contact section">
+        <!-- start of contact background video container -->
+        <figure class="contact__video__container">
+          <!-- start of contact background video -->
+          <video
+            class="contact__video"
+            loop
+            autoplay
+            muted
+            poster="./images/project-1.jpeg"
+          >
+            <source src="./videos/connect.mp4" type="video/mp4" />
+            Sorry, your browser does not support embeded videos
+          </video>
+          <!-- end of contact background video -->
+        </figure>
+        <!-- end of contact background video container -->
+        <!-- start of contact container-->
+        <article class="contact__text__container container">
+          <!-- start of contact header -->
+          <header class="contact__header">
+            <!-- start of contact title -->
+            <h2 class="contact__title title">Let's Get In Touch</h2>
+            <!-- end of contact title -->
+          </header>
+          <!-- end of contact header -->
+          <!-- start of contact text -->
+          <p class="contact__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+            ratione perferendis exercitationem sit. Beatae eius commodi officiis
+            rem soluta ratione dignissimos quisquam tempore laudantium, porro
+            vitae cupiditate dicta magni quas corrupti aperiam, rerum minus odio
+            totam repellendus delectus nostrum veniam!
+          </p>
+          <!-- end of contact text -->
+          <!-- start of contact footer -->
+          <footer class="contact__footer">
+            <!-- start about cta button -->
+            <a href="./contact.index" class="btn about__btn cta__btn"
+              >CONTACT ME</a
+            >
+            <!-- end about cta button -->
+          </footer>
+          <!-- end of contact footer -->
+        </article>
+        <!-- end of contact container -->
+      </section>
       <!-- end of connect -->
       <!-- skills -->
+      <section class="skills section">
+        <!-- start of skills container -->
+        <div class="skills__container container">
+          <!-- start of skills header -->
+          <header class="skills__header">
+            <!-- start of skills title -->
+            <h2 class="skills__title title">Skills</h2>
+            <!-- end of skills title -->
+          </header>
+          <!-- end of skills header -->
+          <!-- start of skills content -->
+          <div class="skills__body">
+            <!-- start of tech container -->
+            <article class="skill">
+              <!-- start of tech header -->
+              <header class="skill__header">
+                <!-- start of tech title -->
+                <h3 class="skill__title">Front End</h3>
+                <!-- end of tech title -->
+              </header>
+              <!-- end of tech header -->
+              <!-- start of skills list -->
+              <ul class="skill__list">
+                <!-- start of skills item container-->
+                <li class="skill__list__item">
+                  <!-- start of skills item -->
+                  <article class="skill__item">
+                    <!-- start of skills item header -->
+                    <header>
+                      <!-- start of skills item title -->
+                      <h4 class="skill__item__title">HTML/ CSS</h4>
+                      <!-- end of skills item title -->
+                      <!-- start of skills item details -->
+                      <div class="skill__details">
+                        <div class="skill__percentage__bar"></div>
+                        <div class="skills__percentage__value">50%</div>
+                      </div>
+                      <!-- end of skills item details -->
+                    </header>
+                    <!-- end of skills item header -->
+                  </article>
+                  <!-- end of skills item -->
+                </li>
+                <!-- end of skills item container-->
+                <!-- start of skills item container-->
+                <li class="skill__list__item">
+                  <!-- start of skills item -->
+                  <article class="skill__item">
+                    <!-- start of skills item header -->
+                    <header>
+                      <!-- start of skills item title -->
+                      <h4 class="skill__item__title">javascript</h4>
+                      <!-- end of skills item title -->
+                      <!-- start of skills item details -->
 
+                      <div class="skill__details">
+                        <div class="skill__percentage__bar"></div>
+                        <div class="skills__percentage__value">70%</div>
+                      </div>
+                      <!-- end of skills item details -->
+                    </header>
+                    <!-- end of skills item header -->
+                  </article>
+                  <!-- end of skills item -->
+                </li>
+                <!-- end of skills item container-->
+                <!-- start of skills item container-->
+                <li class="skill__list__item">
+                  <!-- start of skills item -->
+                  <article class="skill__item">
+                    <!-- start of skills item header -->
+                    <header>
+                      <!-- start of skills item title -->
+                      <h4 class="skill__item__title">react</h4>
+                      <!-- end of skills item title -->
+                      <!-- start of skills item details -->
+                      <div class="skill__details">
+                        <div class="skill__percentage__bar"></div>
+                        <div class="skills__percentage__value">80%</div>
+                      </div>
+                      <!-- end of skills item details -->
+                    </header>
+                    <!-- end of skills item header -->
+                  </article>
+                  <!-- end of skills item -->
+                </li>
+                <!-- end of skills item container-->
+              </ul>
+              <!-- end of skills list -->
+            </article>
+            <!-- end of tech container -->
+            <!-- start of tech container -->
+            <article class="skill">
+              <!-- start of tech header -->
+              <header class="skill__header">
+                <!-- start of tech title -->
+                <h3 class="skill__title">back End</h3>
+                <!-- end of tech title -->
+              </header>
+              <!-- end of tech header -->
+              <!-- start of skills list -->
+              <ul class="skill__list">
+                <!-- start of skills item container-->
+                <!-- start of skills item container-->
+                <li class="skill__list__item">
+                  <!-- start of skills item -->
+                  <article class="skill__item">
+                    <!-- start of skills item header -->
+                    <header>
+                      <!-- start of skills item title -->
+                      <h4 class="skill__item__title">Node</h4>
+                      <!-- end of skills item title -->
+                      <!-- start of skills item details -->
+                      <div class="skill__details">
+                        <div class="skill__percentage__bar"></div>
+                        <div class="skills__percentage__value">50%</div>
+                      </div>
+                      <!-- end of skills item details -->
+                    </header>
+                    <!-- end of skills item header -->
+                  </article>
+                  <!-- end of skills item -->
+                </li>
+                <!-- end of skills item container-->
+                <!-- start of skills item container-->
+                <li class="skill__list__item">
+                  <!-- start of skills item -->
+                  <article class="skill__item">
+                    <!-- start of skills item header -->
+                    <header>
+                      <!-- start of skills item title -->
+                      <h4 class="skill__item__title">PHP</h4>
+                      <!-- end of skills item title -->
+                      <!-- start of skills item details -->
+                      <div class="skill__details">
+                        <div class="skill__percentage__bar"></div>
+                        <div class="skills__percentage__value">70%</div>
+                      </div>
+                      <!-- end of skills item details -->
+                    </header>
+                    <!-- end of skills item header -->
+                  </article>
+                  <!-- end of skills item -->
+                </li>
+                <!-- end of skills item container-->
+                <!-- start of skills item container-->
+                <li class="skill__list__item">
+                  <!-- start of skills item -->
+                  <article class="skill__item">
+                    <!-- start of skills item header -->
+                    <header>
+                      <!-- start of skills item title -->
+                      <h4 class="skill__item__title">Python</h4>
+                      <!-- end of skills item title -->
+                      <!-- start of skills item details -->
+                      <div class="skill__details">
+                        <div class="skill__percentage__bar"></div>
+                        <div class="skills__percentage__value">80%</div>
+                      </div>
+                      <!-- end of skills item details -->
+                    </header>
+                    <!-- end of skills item header -->
+                  </article>
+                  <!-- end of skills item -->
+                </li>
+                <!-- end of skills item container-->
+              </ul>
+            </article>
+            <!-- end of tech container -->
+          </div>
+          <!-- end of skills content -->
+        </div>
+        <!-- end of skills container -->
+      </section>
       <!-- end of skills -->
       <!-- timeline -->
+      <section class="timeline section">
+        <!-- start of timeline container -->
+        <div class="timeline__container container">
+          <!-- start of timeline header -->
+          <header class="timeline__header">
+            <!-- start of timeline title -->
+            <h2 class="timeline__title title">Timeline</h2>
+            <!-- end of timeline title -->
+          </header>
+          <!-- end of timeline header -->
+          <!-- start of timeline list -->
+          <ul class="timeline__list">
+            <!-- start of timeline item container -->
+            <li class="timeline__item__container">
+              <!-- start of timeline item -->
+              <article class="timeline__item">
+                <!-- start of timeline item header -->
+                <header class="timeline__item__header">
+                  <!-- start of timeline item title -->
+                  <h4 class="timeline__item__title">2020</h4>
+                  <!-- end of timeline item title -->
+                  <!-- start of timeline item intro -->
+                  <p class="timeline__intro__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ratione consequuntur voluptates tempore numquam? Quidem
+                    incidunt fugit quasi autem, ea excepturi.
+                  </p>
+                  <!-- end of timeline item intro -->
+                  <!-- start of timeline item no -->
+                  <span class="timeline__item__no">1</span>
+                  <!-- end of timeline item no -->
+                </header>
+                <!-- end of timeline item header -->
+              </article>
+              <!-- end of timeline item -->
+            </li>
+            <!-- end of timeline item container -->
+            <!-- start of timeline item container -->
+            <li class="timeline__item__container">
+              <!-- start of timeline item -->
+              <article class="timeline__item">
+                <!-- start of timeline item header -->
+                <header class="timeline__item__header">
+                  <!-- start of timeline item title -->
+                  <h4 class="timeline__item__title">2019</h4>
+                  <!-- end of timeline item title -->
+                  <!-- start of timeline item intro -->
+                  <p class="timeline__intro__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ratione consequuntur voluptates tempore numquam? Quidem
+                    incidunt fugit quasi autem, ea excepturi.
+                  </p>
+                  <!-- end of timeline item intro -->
+                  <!-- start of timeline item no -->
+                  <span class="timeline__item__no">2</span>
+                  <!-- end of timeline item no -->
+                </header>
+                <!-- end of timeline item header -->
+              </article>
+              <!-- end of timeline item -->
+            </li>
+            <!-- end of timeline item container -->
+            <!-- start of timeline item container -->
+            <li class="timeline__item__container">
+              <!-- start of timeline item -->
+              <article class="timeline__item">
+                <!-- start of timeline item header -->
+                <header class="timeline__item__header">
+                  <!-- start of timeline item title -->
+                  <h4 class="timeline__item__title">2018</h4>
+                  <!-- end of timeline item title -->
+                  <!-- start of timeline item intro -->
+                  <p class="timeline__intro__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ratione consequuntur voluptates tempore numquam? Quidem
+                    incidunt fugit quasi autem, ea excepturi.
+                  </p>
+                  <!-- end of timeline item intro -->
+                  <!-- start of timeline item no -->
+                  <span class="timeline__item__no">3</span>
+                  <!-- end of timeline item no -->
+                </header>
+                <!-- end of timeline item header -->
+              </article>
+              <!-- end of timeline item -->
+            </li>
+            <!-- end of timeline item container -->
+            <!-- start of timeline item container -->
+            <li class="timeline__item__container">
+              <!-- start of timeline item -->
+              <article class="timeline__item">
+                <!-- start of timeline item header -->
+                <header class="timeline__item__header">
+                  <!-- start of timeline item title -->
+                  <h4 class="timeline__item__title">2017</h4>
+                  <!-- end of timeline item title -->
+                  <!-- start of timeline item intro -->
+                  <p class="timeline__intro__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ratione consequuntur voluptates tempore numquam? Quidem
+                    incidunt fugit quasi autem, ea excepturi.
+                  </p>
+                  <!-- end of timeline item intro -->
+                  <!-- start of timeline item no -->
+                  <span class="timeline__item__no">4</span>
+                  <!-- end of timeline item no -->
+                </header>
+                <!-- end of timeline item header -->
+              </article>
+              <!-- end of timeline item -->
+            </li>
+            <!-- end of timeline item container -->
+            <!-- start of timeline item container -->
+            <li class="timeline__item__container">
+              <!-- start of timeline item -->
+              <article class="timeline__item">
+                <!-- start of timeline item header -->
+                <header class="timeline__item__header">
+                  <!-- start of timeline item title -->
+                  <h4 class="timeline__item__title">2016</h4>
+                  <!-- end of timeline item title -->
+                  <!-- start of timeline item intro -->
+                  <p class="timeline__intro__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ratione consequuntur voluptates tempore numquam? Quidem
+                    incidunt fugit quasi autem, ea excepturi.
+                  </p>
+                  <!-- end of timeline item intro -->
+                  <!-- start of timeline item no -->
+                  <span class="timeline__item__no">5</span>
+                  <!-- end of timeline item no -->
+                </header>
+                <!-- end of timeline item header -->
+              </article>
+              <!-- end of timeline item -->
+            </li>
+            <!-- end of timeline item container -->
+            <!-- start of timeline item container -->
+            <li class="timeline__item__container">
+              <!-- start of timeline item -->
+              <article class="timeline__item">
+                <!-- start of timeline item header -->
+                <header class="timeline__item__header">
+                  <!-- start of timeline item title -->
+                  <h4 class="timeline__item__title">2015</h4>
+                  <!-- end of timeline item title -->
+                  <!-- start of timeline item intro -->
+                  <p class="timeline__intro__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ratione consequuntur voluptates tempore numquam? Quidem
+                    incidunt fugit quasi autem, ea excepturi.
+                  </p>
+                  <!-- end of timeline item intro -->
+                  <!-- start of timeline item no -->
+                  <span class="timeline__item__no">6</span>
+                  <!-- end of timeline item no -->
+                </header>
+                <!-- end of timeline item header -->
+              </article>
+              <!-- end of timeline item -->
+            </li>
+            <!-- end of timeline item container -->
+          </ul>
+          <!-- end of timeline list -->
+        </div>
+        <!-- end of timeline container -->
+      </section>
 
       <!--end of  timeline -->
       <!-- blog -->
+      <section class="blogs section">
+        <!-- start of blogs container -->
+        <div class="container blog__container">
+          <!-- start of blogs header -->
+          <header class="blogs__header">
+            <!-- start of blogs title -->
+            <h2 class="blogs__title title">blog</h2>
+            <!--  end of blogs title -->
+          </header>
+          <!-- end of blogs header -->
+          <!-- start of blogs list -->
+          <ul class="blog__list">
+            <!-- start of blog item container -->
+            <li class="blog__item__container">
+              <!-- start of blog item -->
+              <article class="blog__item">
+                <!-- start of blog card front -->
+                <div class="card__front card__side">
+                  <!-- start of blog  header -->
+                  <header class="blog__item__header">
+                    <!-- start of blog image container -->
+                    <figure class="blog__img__container">
+                      <!-- start of blog image -->
+                      <img
+                        src="./images/project-1.jpeg"
+                        class="blog__img"
+                        alt=""
+                      />
+                      <!-- end of blog image -->
+                    </figure>
+                    <!-- end of blog image container -->
+                    <!-- start of blog text container -->
+                    <div class="blog__text__container">
+                      <!-- start of blog title -->
+                      <h4 class="blog__item__title">article title</h4>
+                      <!-- end of blog title -->
+                      <!-- start of blog intro -->
+                      <p class="blog__intro__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ratione consequuntur voluptates tempore numquam? Quidem
+                        incidunt fugit quasi autem, ea excepturi.
+                      </p>
+                      <!-- end of blog intro -->
+                      <!-- start of blog postage details -->
+                      <div class="blog__postage__details">
+                        <!-- start of blog postage author img container-->
+                        <figure>
+                          <!-- start of blog postage author img -->
+                          <img
+                            src="./images/hero-img-small.jpeg"
+                            alt="authror image"
+                            class="blog__author__img"
+                          />
+                          <!-- end of blog postage author img-->
+                        </figure>
+                        <!-- end of blog postage author img container-->
+                        <!-- start of blog read time -->
+                        <div class="blog__read__duration">7 min read</div>
+                        <!-- end of blog read time -->
+                      </div>
+                      <!-- end of blog postage details -->
+                    </div>
+                    <!-- end of blog text container -->
+                  </header>
+                  <!-- end of blog  header -->
+                </div>
+                <!-- end of blog card front -->
+                <!-- start of blog card back -->
 
+                <footer class="card__side card__back blog__footer">
+                  <!-- start of blog card back link-->
+                  <a href="" class="btn cta__btn">read more</a>
+                  <!-- end of blog card back link-->
+                </footer>
+                <!-- end of blog card back -->
+              </article>
+              <!-- end of blog item -->
+            </li>
+            <!-- end of blog item container -->
+            <!-- start of blog item container -->
+            <li class="blog__item__container">
+              <!-- start of blog item -->
+              <article class="blog__item">
+                <!-- start of blog card front -->
+                <div class="card__front card__side">
+                  <!-- start of blog  header -->
+                  <header class="blog__item__header">
+                    <!-- start of blog image container -->
+                    <figure class="blog__img__container">
+                      <!-- start of blog image -->
+                      <img
+                        src="./images/project-2.jpeg"
+                        class="blog__img"
+                        alt=""
+                      />
+                      <!-- end of blog image -->
+                    </figure>
+                    <!-- end of blog image container -->
+                    <!-- start of blog text container -->
+                    <div class="blog__text__container">
+                      <!-- start of blog title -->
+                      <h4 class="blog__item__title">article title</h4>
+                      <!-- end of blog title -->
+                      <!-- start of blog intro -->
+                      <p class="blog__intro__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ratione consequuntur voluptates tempore numquam? Quidem
+                        incidunt fugit quasi autem, ea excepturi.
+                      </p>
+                      <!-- end of blog intro -->
+                      <!-- start of blog postage details -->
+                      <div class="blog__postage__details">
+                        <!-- start of blog postage author img container-->
+                        <figure>
+                          <!-- start of blog postage author img -->
+                          <img
+                            src="./images/hero-img-small.jpeg"
+                            alt="authror image"
+                            class="blog__author__img"
+                          />
+                          <!-- end of blog postage author img-->
+                        </figure>
+                        <!-- end of blog postage author img container-->
+                        <!-- start of blog read time -->
+                        <div class="blog__read__duration">7 min read</div>
+                        <!-- end of blog read time -->
+                      </div>
+                      <!-- end of blog postage details -->
+                    </div>
+                    <!-- end of blog text container -->
+                  </header>
+                  <!-- end of blog  header -->
+                </div>
+                <!-- end of blog card front -->
+                <!-- start of blog card back -->
+
+                <footer class="card__side card__back blog__footer">
+                  <!-- start of blog card back link-->
+                  <a href="" class="btn cta__btn">read more</a>
+                  <!-- end of blog card back link-->
+                </footer>
+                <!-- end of blog card back -->
+              </article>
+              <!-- end of blog item -->
+            </li>
+            <!-- end of blog item container -->
+            <!-- start of blog item container -->
+            <li class="blog__item__container">
+              <!-- start of blog item -->
+              <article class="blog__item">
+                <!-- start of blog card front -->
+                <div class="card__front card__side">
+                  <!-- start of blog  header -->
+                  <header class="blog__item__header">
+                    <!-- start of blog image container -->
+                    <figure class="blog__img__container">
+                      <!-- start of blog image -->
+                      <img
+                        src="./images/project-3.jpeg"
+                        class="blog__img"
+                        alt=""
+                      />
+                      <!-- end of blog image -->
+                    </figure>
+                    <!-- end of blog image container -->
+                    <!-- start of blog text container -->
+                    <div class="blog__text__container">
+                      <!-- start of blog title -->
+                      <h4 class="blog__item__title">article title</h4>
+                      <!-- end of blog title -->
+                      <!-- start of blog intro -->
+                      <p class="blog__intro__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ratione consequuntur voluptates tempore numquam? Quidem
+                        incidunt fugit quasi autem, ea excepturi.
+                      </p>
+                      <!-- end of blog intro -->
+                      <!-- start of blog postage details -->
+                      <div class="blog__postage__details">
+                        <!-- start of blog postage author img container-->
+                        <figure>
+                          <!-- start of blog postage author img -->
+                          <img
+                            src="./images/hero-img-small.jpeg"
+                            alt="authror image"
+                            class="blog__author__img"
+                          />
+                          <!-- end of blog postage author img-->
+                        </figure>
+                        <!-- end of blog postage author img container-->
+                        <!-- start of blog read time -->
+                        <div class="blog__read__duration">7 min read</div>
+                        <!-- end of blog read time -->
+                      </div>
+                      <!-- end of blog postage details -->
+                    </div>
+                    <!-- end of blog text container -->
+                  </header>
+                  <!-- end of blog  header -->
+                </div>
+                <!-- end of blog card front -->
+                <!-- start of blog card back -->
+
+                <footer class="card__side card__back blog__footer">
+                  <!-- start of blog card back link-->
+                  <a href="" class="btn cta__btn">read more</a>
+                  <!-- end of blog card back link-->
+                </footer>
+                <!-- end of blog card back -->
+              </article>
+              <!-- end of blog item -->
+            </li>
+            <!-- end of blog item container -->
+            <!-- start of blog item container -->
+            <li class="blog__item__container">
+              <!-- start of blog item -->
+              <article class="blog__item">
+                <!-- start of blog card front -->
+                <div class="card__front card__side">
+                  <!-- start of blog  header -->
+                  <header class="blog__item__header">
+                    <!-- start of blog image container -->
+                    <figure class="blog__img__container">
+                      <!-- start of blog image -->
+                      <img
+                        src="./images/project-4.jpeg"
+                        class="blog__img"
+                        alt=""
+                      />
+                      <!-- end of blog image -->
+                    </figure>
+                    <!-- end of blog image container -->
+                    <!-- start of blog text container -->
+                    <div class="blog__text__container">
+                      <!-- start of blog title -->
+                      <h4 class="blog__item__title">article title</h4>
+                      <!-- end of blog title -->
+                      <!-- start of blog intro -->
+                      <p class="blog__intro__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ratione consequuntur voluptates tempore numquam? Quidem
+                        incidunt fugit quasi autem, ea excepturi.
+                      </p>
+                      <!-- end of blog intro -->
+                      <!-- start of blog postage details -->
+                      <div class="blog__postage__details">
+                        <!-- start of blog postage author img container-->
+                        <figure>
+                          <!-- start of blog postage author img -->
+                          <img
+                            src="./images/hero-img-small.jpeg"
+                            alt="authror image"
+                            class="blog__author__img"
+                          />
+                          <!-- end of blog postage author img-->
+                        </figure>
+                        <!-- end of blog postage author img container-->
+                        <!-- start of blog read time -->
+                        <div class="blog__read__duration">7 min read</div>
+                        <!-- end of blog read time -->
+                      </div>
+                      <!-- end of blog postage details -->
+                    </div>
+                    <!-- end of blog text container -->
+                  </header>
+                  <!-- end of blog  header -->
+                </div>
+                <!-- end of blog card front -->
+                <!-- start of blog card back -->
+
+                <footer class="card__side card__back blog__footer">
+                  <!-- start of blog card back link-->
+                  <a href="" class="btn cta__btn">read more</a>
+                  <!-- end of blog card back link-->
+                </footer>
+                <!-- end of blog card back -->
+              </article>
+              <!-- end of blog item -->
+            </li>
+            <!-- end of blog item container -->
+            <!-- start of blog item container -->
+            <li class="blog__item__container">
+              <!-- start of blog item -->
+              <article class="blog__item">
+                <!-- start of blog card front -->
+                <div class="card__front card__side">
+                  <!-- start of blog  header -->
+                  <header class="blog__item__header">
+                    <!-- start of blog image container -->
+                    <figure class="blog__img__container">
+                      <!-- start of blog image -->
+                      <img <!-- end of blog image -- />
+                      src="./images/project-1.jpeg" class="blog__img" alt="" />
+                      <!-- end of blog image container -->
+                      <!-- start of blog text container -->
+                    </figure>
+                    <!-- start of blog title -->
+                    <div class="blog__text__container">
+                      <!-- end of blog title -->
+                      <!-- start of blog intro -->
+                      <h4 class="blog__item__title">article title</h4>
+                      <!-- end of blog intro -->
+                      <!-- start of blog postage details -->
+                      <p class="blog__intro__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ratione consequuntur voluptates tempore numquam? Quidem
+                        incidunt fugit quasi autem, ea excepturi.
+                      </p>
+                      <!-- start of blog postage author img container-->
+                      <div class="blog__postage__details">
+                        <!-- start of blog postage author img -->
+                        <figure>
+                          <!-- end of blog postage author img-->
+                          <img
+                            src="./images/hero-img-small.jpeg"
+                            alt="authror image"
+                            class="blog__author__img"
+                          />
+                          <!-- end of blog postage author img container-->
+                          <!-- start of blog read time -->
+                        </figure>
+                        <div class="blog__read__duration">7 min read</div>
+                        <!-- end of blog read time -->
+                      </div>
+                      <!-- end of blog postage details -->
+                    </div>
+                    <!-- end of blog text container -->
+                  </header>
+                  <!-- end of blog  header -->
+                </div>
+                <!-- end of blog card front -->
+                <!-- start of blog card back -->
+
+                <footer class="card__side card__back blog__footer">
+                  <!-- start of blog card back link-->
+                  <a href="" class="btn cta__btn">read more</a>
+                  <!-- end of blog card back link-->
+                </footer>
+                <!-- end of blog card back -->
+              </article>
+              <!-- end of blog item -->
+            </li>
+            <!-- end of blog item container -->
+          </ul>
+          <!-- end of blog list -->
+        </div>
+        <!-- end of blogs container -->
+      </section>
       <!--end of  blog -->
     </main>
 
     <!-- footer -->
 
+    <footer class="footer">
+      <!-- start of footer container -->
+      <div class="container">
+        <!-- start of footer social icon container -->
+        <nav role="navigation" aria-label="footer__nav" class="footer__nav">
+          <ul class="social__container socials__container">
+            <!-- start of social item container -->
+            <li>
+              <!-- start of social link -->
+              <a href="https://www.twitter.com" class="social-icon"
+                ><!-- start of social icon -->
+                <i class="fab fa-facebook"></i
+                ><!-- end of social icon --> </a
+              ><!-- end of social link -->
+            </li>
+            <!-- end of social item container --><!-- start of social item container -->
+            <li>
+              <!-- start of social link -->
+              <a href="https://www.twitter.com" class="social-icon"
+                ><!-- start of social icon -->
+                <i class="fab fa-linkedin"></i
+                ><!-- end of social icon --> </a
+              ><!-- end of social link -->
+            </li>
+            <!-- end of social item container --><!-- start of social item container -->
+            <li>
+              <!-- start of social link -->
+              <a href="https://www.twitter.com" class="social-icon"
+                ><!-- start of social icon -->
+                <i class="fab fa-squarespace"></i
+                ><!-- end of social icon --> </a
+              ><!-- end of social link -->
+            </li>
+            <!-- end of social item container --><!-- start of social item container -->
+            <li>
+              <!-- start of social link -->
+              <a href="https://www.twitter.com" class="social-icon"
+                ><!-- start of social icon -->
+                <i class="fab fa-behance"></i
+                ><!-- end of social icon --> </a
+              ><!-- end of social link -->
+            </li>
+            <!-- end of social item container --><!-- start of social item container -->
+            <li>
+              <!-- start of social link -->
+              <a href="https://www.twitter.com" class="social-icon"
+                ><!-- start of social icon -->
+                <i class="fab fa-instagram"></i
+                ><!-- end of social icon --> </a
+              ><!-- end of social link -->
+            </li>
+            <!-- end of social item container -->
+          </ul>
+          <!-- end of footer social icon container -->
+        </nav>
+        <!-- start of copyright text -->
+        <small class="copyright"
+          >© <time class="copyright__date" id="date">2024</time>. All Rights
+          Reserved</small
+        >
+        <!-- end of copyright text -->
+      </div>
+      <!-- end of footer container -->
+    </footer>
+    <!-- end of footer -->
+
     <script src="./js/app.js"></script>
   </body>
 </html>
+<!-- i don't what's worth fighting for  -->

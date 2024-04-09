@@ -1,0 +1,51 @@
+/*
+===================================
+|| ABOUT                        |
+===================================
+*/
+/* start of about section */
+.about {
+  min-height: calc(100vh - 5rem - 9.55rem);
+  background-image: repeating-linear-gradient(
+    135deg,
+    var(--CLR-PRIMARY-5) 5px,
+    var(--CLR-PRIMARY-8) 8px
+  );
+}
+
+/* 
+  firefox hero section 
+  this is just duo to the fact
+  firefox was not rendering the 
+  repeating linear gradient as 
+  expected so i have to tweak some 
+  value
+  */
+@-moz-document url-prefix() {
+  .about {
+    background-image: -moz-repeating-linear-gradient(
+      36deg,
+      var(--CLR-PRIMARY-5) 7px,
+      var(--CLR-PRIMARY-8) 11px
+    );
+  }
+}
+/* about title / heading */
+.about__title {
+  text-align: center;
+  margin-block-end: 4rem;
+}
+/*  about title / heading underline */
+.about__title::after {
+  background-image: linear-gradient(
+    14deg,
+    var(--CLR-PRIMARY-3),
+    var(--CLR-PRIMARY-5)
+  );
+}
+/* about text */
+.about__text {
+  max-width: 50rem;
+  color: var(--CLR-PRIMARY-1);
+  margin-inline: auto;
+}

@@ -1,0 +1,58 @@
+/*
+===================================
+|| CONTACT                        |
+===================================
+*/
+/* start of contact section */
+.contact {
+  min-height: calc(100vh - 5rem - 9.55rem);
+  background-image: repeating-linear-gradient(
+    135deg,
+    var(--CLR-PRIMARY-5) 5px,
+    var(--CLR-PRIMARY-8) 8px
+  );
+}
+
+/* 
+  firefox hero section 
+  this is just duo to the fact
+  firefox was not rendering the 
+  repeating linear gradient as 
+  expected so i have to tweak some 
+  value
+  */
+@-moz-document url-prefix() {
+  .contact {
+    background-image: -moz-repeating-linear-gradient(
+      36deg,
+      var(--CLR-PRIMARY-5) 7px,
+      var(--CLR-PRIMARY-8) 11px
+    );
+  }
+}
+/* contact title / heading */
+.contact__title {
+  text-align: center;
+}
+/* contact title  / heading underline */
+.contact__title::after {
+  background-image: linear-gradient(
+    14deg,
+    var(--CLR-PRIMARY-3),
+    var(--CLR-PRIMARY-5)
+  );
+}
+/* contact content */
+.contact__content {
+  padding-block-start: 2rem;
+  margin-inline: auto;
+  max-width: 40rem;
+}
+/* contact content / paragraph */
+.contact__content p {
+  color: var(--CLR-PRIMARY-2);
+}
+/* contact content / paragraph links */
+.contact__content p a {
+  color: var(--CLR-PRIMARY-3);
+}
